@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-<meta charset="UTF-8">
-<title>Shery Pixel Maker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shery Pixel Maker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Shery Pixel Maker</h1>
-<p>در حال ساخت برنامه...</p>
+<h1>🎨 Shery Pixel Maker</h1>
+
+<div class="container">
+  <input type="file" id="imageInput" accept="image/*">
+
+  <br><br>
+
+  <label>اندازه شبکه:</label>
+
+  <select id="gridSize">
+    <option value="20">20 × 20</option>
+    <option value="30">30 × 30</option>
+    <option value="40">40 × 40</option>
+    <option value="50">50 × 50</option>
+  </select>
+
+  <br><br>
+
+  <button id="generateBtn">
+    ساخت الگو
+  </button>
+
+  <br><br>
+
+  <canvas id="canvas"></canvas>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
